@@ -1,0 +1,183 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-image: radial-gradient(circle at 114.09% 79.88%, #bdd763 0, #c7d057 6.25%, #d0c84c 12.5%, #d9bf41 18.75%, #e0b436 25%, #e6a82d 31.25%, #ec9b25 37.5%, #f08c21 43.75%, #f37b1f 50%, #f56822 56.25%, #f75429 62.5%, #f93d31 68.75%, #fa1d3c 75%, #f90048 81.25%, #f80055 87.5%, #f50063 93.75%, #f00073 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    width: 450px;
+    background-image: radial-gradient(circle at 50% -20.71%, #bbd97b 0, #c5d371 5.56%, #cecd67 11.11%, #d6c55e 16.67%, #ddbc55 22.22%, #e3b14d 27.78%, #e9a647 33.33%, #ed9841 38.89%, #f08a3e 44.44%, #f2793c 50%, #f3673d 55.56%, #f45442 61.11%, #f34049 66.67%, #f22853 72.22%, #f0005e 77.78%, #eb006b 83.33%, #e60079 88.89%, #de0089 94.44%, #d30099 100%);    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.login-card::before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, .6)
+    transform: rotate(-5deg);
+    z-index: -1;
+    border-radius: 10px;
+}
+.login-card-logo {
+    margin-bottom: 2rem;
+}
+
+.login-card-logo img{
+    width: 60px;
+}
+
+.login-card-logo,
+.login-card-header,
+.login-card-footer {
+    text-align: center;
+}
+
+.login-card a {
+    text-decoration: none;
+    color: #35339a;
+}
+
+.login-card a:hover {
+    text-decoration: underline;
+}
+
+.login-card-header {
+    margin-bottom: 2rem;
+}
+
+.login-card-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.logincard-header h1 + dev {
+    font-size: calc(1rem * .8);
+    opacity: .8;
+}
+
+.login-card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.login-card-form .form-item {
+    position: relative;
+}
+
+.login-card-form .form-item .form-item-icon {
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+.login-card-form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.login-card-form .form-item-other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem * .8);
+    margin-bottom: .5rem;
+}
+
+.login-card-footer {
+    margin-top : 1.5rem;
+    font-size: calc(1rem * .8);
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"],
+.login-card input[type="email"] {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .3);
+    padding: 1rem 1.5px;
+    padding-left: calc(1rem * 3.5);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 100px;
+    width: 100%;
+    transition: background 0.5s;
+}
+
+.login-card input:focus {
+    background: white;
+}
+
+.login-card input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: black;
+}
+
+.login-card-form button{
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background 0.5s;
+}
+
+.login-card-form button:hover {
+    background-color: rgba(0, 0, 0, .85);
+    cursor: pointer;
+}
+
+.login-card-social {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.login-card-social > div {
+    opacity: .8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: calc(1rem * .8);
+}
+
+.login-card-social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.login-card-social-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 50px;
+    height: 50px;
+    background-image: radial-gradient(circle at 50% 50%, #de9c2c 0, #e5922a 8.33%, #ea852b 16.67%, #ee772d 25%, #f16731 33.33%, #f35436 41.67%, #f23c3c 50%, #f01843 58.33%, #ed004c 66.67%, #e90057 75%, #e30064 83.33%, #db0071 91.67%, #d10080 100%);    border-radius: 100px;
+    transition: all .5s;
+}
+
+.login-card-social-btn a:hover {
+    background-image: radial-gradient(circle at 50% 50%, #de9c2c 0, #e5922a 8.33%, #ea852b 16.67%, #ee772d 25%, #f16731 33.33%, #f35436 41.67%, #f23c3c 50%, #f01843 58.33%, #ed004c 66.67%, #e90057 75%, #e30064 83.33%, #db0071 91.67%, #d10080 100%);    border-radius: 100px;
+    transform: scale(1.1);
+}
+
+
+
+
